@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        $.get(
+          "https://www.antoniogallegos.com/prueba",
+          function (res) {
+            console.log(res);
+          },
+          "json"
+        );
+
+        $.getJSON("prueba.json", function (data) {
+          console.log(data);
+        });
+
+        var prueba = [
+          [
+            1,
+            3,
+            1,
+            "ISBN 968-81-2401-477-0",
+            587,
+            null,
+            "El Quijote",
+            1999,
+            "Miguel De Cervantes",
+            "Megalibros",
+            "Cuento",
+          ],
+          [
+            2,
+            2,
+            22,
+            "ISBN 578-27-4203-5874-1",
+            354,
+            null,
+            "Niebla",
+            1998,
+            "Miguel De Unamuno",
+            "Editorial Mediterráneo",
+            "Novela",
+          ],
+          [
+            3,
+            4,
+            32,
+            "ISBN 471-22-3589-4741-1",
+            285,
+            null,
+            "El Forastero Misterioso",
+            1998,
+            "Mark Twain",
+            "Rayana",
+            "Novela",
+          ],
+          [
+            4,
+            12,
+            42,
+            "ISBN 387-87-4287-6589-2",
+            595,
+            null,
+            "Álgebra de Baldor",
+            2001,
+            "Aurelio Baldor",
+            "Ediciones San Pablo",
+            "Educación",
+          ],
+          [
+            5,
+            8,
+            24,
+            "ISBN 587-67-3698-4582-7",
+            374,
+            null,
+            "Paisajes del alma",
+            1999,
+            "Miguel De Unamuno",
+            "Galileo Libros",
+            "Novela",
+          ],
+          [
+            10,
+            3,
+            45673,
+            "QWERTYUIO123",
+            500,
+            null,
+            "CASA",
+            2010,
+            "Miguel De Unamuno",
+            "Galileo Libros",
+            "Educación",
+          ],
+        ];
+        console.log(prueba);
+        console.log(prueba[0][6]); */
+      });
+    </script>
+  </head>
+  <body></body>
+</html>
